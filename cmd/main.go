@@ -14,6 +14,10 @@ import (
 	"github.com/SmilingAli3n/crud_refactored/pkg/response"
 
 	"github.com/gorilla/mux"
+
+	_ "crud_refactored/cmd/docs"
+
+    	httpSwagger "github.com/swaggo/http-swagger"
 )
 
 var c = cache.New(time.Minute)
@@ -42,6 +46,7 @@ func main() {
     r := mux.NewRouter()
 	r.HandleFunc("/tickets/{id}", ticketsHandler)
 	http.Handle("/", r)
+	r.PathPrefix("/swagger").Handler(httpSwagger.WrapHandler)
 	fmt.Println("Server started")
 	err := http.ListenAndServe(":8080", nil)
 	if err != nil {
