@@ -1,0 +1,61 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "This is a sample Ticket CRUD",
+        "title": "Ticket API",
+        "contact": {},
+        "version": "1.0"
+    },
+    "paths": {
+        "/tickets/{id}": {
+            "get": {
+                "parameters": [
+                    {
+                        "type": "integer",
+                        "description": "int, id of ticket",
+                        "name": "id",
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {}
+            },
+            "put": {
+                "parameters": [
+                    {
+                        "type": "integer",
+                        "description": "int, id of ticket",
+                        "name": "id",
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {}
+            },
+            "post": {
+                "parameters": [
+                    {
+                        "type": "integer",
+                        "description": "int, id of ticket",
+                        "name": "id",
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {}
+            },
+            "delete": {
+                "parameters": [
+                    {
+                        "type": "integer",
+                        "description": "int, id of ticket",
+                        "name": "id",
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {}
+            }
+        }
+    }
+}

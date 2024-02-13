@@ -1,0 +1,12 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "This is a sample Ticket CRUD",
+        "title": "Ticket API",
+        "contact": {},
+        "version": "1.0"
+    },
+    "host": "tickets.swagger.io",
+    "basePath": "/tickets",
+    "paths": {}
+}

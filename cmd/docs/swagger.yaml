@@ -1,0 +1,40 @@
+info:
+  contact: {}
+  description: This is a sample Ticket CRUD
+  title: Ticket API
+  version: "1.0"
+paths:
+  /tickets/{id}:
+    delete:
+      parameters:
+      - description: int, id of ticket
+        in: path
+        name: id
+        required: true
+        type: integer
+      responses: {}
+    get:
+      parameters:
+      - description: int, id of ticket
+        in: path
+        name: id
+        required: false
+        type: integer
+      responses: {}
+    post:
+      parameters:
+      - description: int, id of ticket
+        in: path
+        name: id
+        required: true
+        type: integer
+      responses: {}
+    put:
+      parameters:
+      - description: int, id of ticket
+        in: path
+        name: id
+        required: true
+        type: integer
+      responses: {}
+swagger: "2.0"

@@ -1,0 +1,9 @@
+basePath: /tickets
+host: tickets.swagger.io
+info:
+  contact: {}
+  description: This is a sample Ticket CRUD
+  title: Ticket API
+  version: "1.0"
+paths: {}
+swagger: "2.0"
